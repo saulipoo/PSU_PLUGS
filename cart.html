@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+  <nav class="navbar navbar-inverse navbar-toggleable-md navbar-light bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">PSU Plug$</a>
+
+    <div class="collapse centered navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Men's</a>
+        </li>
+        <li class ="nav-item">
+          <a class ="nav-link" heref="#">Women's</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <head>
+    <title>PSU Plugs </title>
+    <meta charset="UTF-8">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+    <script type = "text/JavaScript">
+                function myFunction()
+                {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                window.onclick = function(event)
+                {
+                    if(!event.target.matches('.dropbtn'))
+                    {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for(i = 0; i <dropdowns.length;i++)
+                        {
+                            var openDropdown = dropdowns[i];
+                            if(openDropdown.classList.contains('show'))
+                            {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+
+  </head>
+
+  <body>
+    <form id="shopping-cart" action="cart.html" method="post">
+	<table class="shopping-cart">
+		<thead>
+			<tr>
+				<th scope="col">Item</th>
+				<th scope="col">Qty</th>
+				<th scope="col">Price</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<p id="sub-total">
+		<strong>Sub Total</strong>: <span id="stotal"></span>
+	</p>
+	<ul id="shopping-cart-actions">
+		<li>
+			<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+		</li>
+		<li>
+			<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+		</li>
+		<li>
+			<a href="product.html" class="btn-success">Continue Shopping</a>
+		</li>
+		<li>
+			<a href="checkout.html" class="btn-success">Go To Checkout</a>
+		</li>
+	</ul>
+</form>
+  </body>
+</html>

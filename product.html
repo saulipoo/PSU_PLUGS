@@ -1,0 +1,126 @@
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+  crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<nav class="navbar navbar-inverse navbar-toggleable-md navbar-light bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <a class="navbar-brand" href="#">PSU Plug$</a>
+
+  <div class="collapse centered navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Men's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" heref="#">Women's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href ="contant.html" href="#">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<head>
+  <title>PSU Plugs </title>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('app').catch(function (err) { console.error(err); });
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container" style="width: 80%;">
+    <div class="col-md-12" style="border-color: black; padding-top: 100px;">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="https://i1.wp.com/hypebeast.com/image/2016/10/nike-flyknit-racer-blue-tint-001.jpg?quality=95&w=1024" float="left"
+            alt="Kobe A.D. choices" border="1" style="width: 600px;height: 500px;">
+        </div>
+        <div class="col-md-3" style="margin-top: 100px;">
+          <h2> Kobe A.D. </h2>
+          <h2> unisex running shoe</h2>
+          <h4> Price: $120 </h3>
+            <br>
+
+            <div style="margin-top: 5px;">
+              <label for="Size"></label>
+              <select class="btn btn-success" name="size" id="size" data-type="string" data-message="This field may not be empty">
+			          <option value="">Select Size</option>
+			          <option value="Small">Small</option>
+			          <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+		            </select>
+              <a href="cart.html" class="btn btn-success">Add to Cart</a>
+            </div>
+              <div class="stars" style="float:left;">
+                <form action="">
+                  <input class="star star-5" id="star-5" type="radio" name="star" />
+                  <label class="star star-5" for="star-5"></label>
+                  <input class="star star-4" id="star-4" type="radio" name="star" />
+                  <label class="star star-4" for="star-4"></label>
+                  <input class="star star-3" id="star-3" type="radio" name="star" />
+                  <label class="star star-3" for="star-3"></label>
+                  <input class="star star-2" id="star-2" type="radio" name="star" />
+                  <label class="star star-2" for="star-2"></label>
+                  <input class="star star-1" id="star-1" type="radio" name="star" />
+                  <label class="star star-1" for="star-1"></label>
+                  <p>Rate this Product</p>
+                </form>
+              </div>
+
+        </div>
+        <div class="col-md-4" style="float:right; border-color: black;">
+          <a class="twitter-timeline" href="https://twitter.com/hashtag/stockx" data-widget-id="857382140450922496">#stockx Tweets</a>
+          <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+          </script>
+
+        </div>
+      </div>
+    </div>
+    <div>
+
+      <section>
+        <br>
+        <p>Introducing the Newest Scheme</p>
+        <hr>
+        <details>
+          <ul>
+            <li>dope 1 </li>
+            <li>dope 2 </li>
+            <li>dope 3 </li>
+          </ul>
+        </details>
+      </section>
+    </div>
+
+
+
+</body>
+
+</html>
